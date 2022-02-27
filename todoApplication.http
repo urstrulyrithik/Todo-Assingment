@@ -1,0 +1,24 @@
+GET  http://localhost:3000/todos/?status=DONE
+
+###
+
+POST http://localhost:3000/todos/
+Content-Type: application/json
+
+{    
+    "id": 156,
+    "todo": "Fetch Rithik",
+    "priority":"HIGH",
+    "status":"TO DO",
+    "category":"HOME",
+    "dueDate":"2021-02-22"
+}
+###
+
+PUT http://localhost:3000/todos/1/
+Content-Type: application/json
+
+{    
+    "status": "DONE",
+    
+}
