@@ -1,24 +1,34 @@
-GET  http://localhost:3000/todos/?status=DONE
+GET  http://localhost:8001/todos/?status=DONE&priority=MEDIUM
+
 
 ###
 
-POST http://localhost:3000/todos/
+POST http://localhost:8001/todos/
 Content-Type: application/json
 
-{    
-    "id": 156,
-    "todo": "Fetch Rithik",
-    "priority":"HIGH",
-    "status":"TO DO",
-    "category":"HOME",
-    "dueDate":"2021-02-22"
-}
+    
+   {
+    "id": 2,
+    "todo": "Buy a Car",
+    "priority": "MEDIUM",
+    "status": "TO DO",
+    "category": "HOME",
+    "dueDate": "2020-09-22"
+  }
+
 ###
 
-PUT http://localhost:3000/todos/1/
+PUT http://localhost:8001/todos/1/
 Content-Type: application/json
 
 {    
-    "status": "DONE",
+    
+    "dueDate":"2003-06-06"
     
 }
+
+###
+GET http://localhost:8001/agenda/?date=2021-01-12
+
+### 
+DELETE http://localhost:8001/todos/2
